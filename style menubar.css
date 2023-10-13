@@ -1,0 +1,105 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Header Styles */
+.menu-bar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-bar .logo img {
+    margin-right: 10px;
+}
+
+.menu-bar .logo p {
+    font-size: 18px;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar li {
+    margin: 0 15px;
+}
+
+.menu-bar li.active a {
+    color: #ff9800;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Sub-menu Styles */
+.sub-menu-1,
+.sub-menu-2 {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.sub-menu-1 ul,
+.sub-menu-2 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-bar li:hover .sub-menu-1,
+.menu-bar li:hover .sub-menu-2 {
+    display: block;
+}
+
+.sub-menu-1 li,
+.sub-menu-2 li {
+    margin: 5px 0;
+}
+
+/* Twitter Follow Button Styles */
+.twitter-follow-button {
+    display: inline-block;
+    background-color: #1da1f2;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+/* Footer Styles */
+table[border="0"] {
+    width: 100%;
+    background-image: url('includes/_black_alpha_15.png');
+}
+
+table[border="0"] h2.white {
+    color: #fff;
+    margin: 0;
+}
+
+table[border="0"] img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Miscellaneous Styles */
+p {
+    margin: 10px 0;
+}
